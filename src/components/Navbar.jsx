@@ -1,5 +1,5 @@
 import React from "react";
-import './styles.css'
+import "./styles.css";
 
 const Navbar = () => {
   return (
@@ -27,6 +27,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/saturn">saturn</a>
+          </li>
+          <li>
+            <a href="/uranus">uranus</a>
           </li>
           <li>
             <a href="/neptune">neptune</a>
