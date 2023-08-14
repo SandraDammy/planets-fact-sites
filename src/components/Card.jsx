@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({title,value}) => {
   return (
-    <div>
-      Card
-    </div>
-  )
-}
+      <div className='card'>
+        <h4 className='card-title'>{title}</h4>
+        <h2 className='card-value'>{value} days</h2>
+      </div>
+  );
+};
 
-export default Card
+export default Card;

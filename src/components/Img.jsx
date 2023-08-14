@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Img = () => {
+const Img = ({ classImg, planet }) => {
   return (
-    <div>Img</div>
-  )
-}
+    <div>
+      <div className={classImg}>{planet}</div>
+    </div>
+  );
+};
 
-export default Img
+export default Img;

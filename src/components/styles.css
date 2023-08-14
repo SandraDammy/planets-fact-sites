@@ -45,17 +45,13 @@ a {
   width: 100%;
 }
 .navigation-menu a:hover {
-  border-bottom: 2px solid #ffffff
+  border-bottom: 2px solid #ffffff;
 }
 /* .nav-active {
   border-bottom: 2px solid #ffffff
 } */
 .navigation-menu a.active {
-  border-bottom: 2px solid #108738
-}
-h1 {
-  background-color: red;
-  color: aliceblue;
+  border-bottom: 2px solid #108738;
 }
 
 /* Hamburger  */
@@ -81,23 +77,165 @@ h1 {
   background-color: #26af6a;
 }
 
-
-/* Pages */
-.container{
+/* Img */
+.planet {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10rem;
+}
+.overview {
+  height: 290px;
+  width: 290px;
+  background-color: aqua;
+}
+.internal {
+  background-color: #108738;
+  width: 139px;
+  height: 278px;
+}
+.surface {
+  background-color: yellow;
+  width: 163px;
+  height: 199px;
+}
+/* Pages */
+.container {
+  display: flex;
+  height: calc(100vh - 70px);
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-.container-body{
-  background-color: red;
+.container-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+.container-context {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  text-align: left;
+}
+
+/* Context */
+.context-title {
+  font-family: Antonio;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 104px;
+  letter-spacing: 0px;
+  margin-bottom: 1.5rem;
+}
+.context-text {
+  font-family: Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+}
+
+/* LinkSource */
+.text-link {
+  font-family: Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+span {
+  font-family: Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: underline;
+}
+/* plantStages */
+.plant-stage {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  width: 350px;
+  height: 48px;
+  top: 577px;
+  left: 925px;
+  border: 0.5px solid #ffffff;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.plant-stage:hover {
+  background-color: #419ebb;
+  color: #ffffff;
+  border: none;
+}
+.number {
+  font-family: Spartan;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.5714285373687744px;
+  text-align: left;
+  margin-right: 1rem;
+}
+.plant-stage .stage-text {
+  font-family: Spartan;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.5714285373687744px;
+  text-align: left;
+}
+/* card */
 .container-card {
-  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 90%;
+  margin-top: 3rem;
 }
+.card {
+  width: 255px;
+  height: 128px;
+  top: 840px;
+  left: 165px;
+  border: 0.5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.card-title {
+  font-family: Spartan;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: left;
+  
+}
+.card-value {
+  font-family: Antonio;
+font-size: 40px;
+font-weight: 400;
+line-height: 52px;
+letter-spacing: -1.5px;
+text-align: left;
 
-
-
+}
 
 
 @media (max-width: 768px) {
