@@ -1,5 +1,4 @@
 import React from "react";
-import LinkImg from "../assets/img/link-icon.png";
 
 const LinkSource = ({ linkEventHandler, linkText }) => {
   return (
@@ -8,7 +7,6 @@ const LinkSource = ({ linkEventHandler, linkText }) => {
         Source :{" "}
         <span onClick={linkEventHandler}>
           {linkText}
-          <LinkImg className="icon" />
         </span>
       </p>
     </div>
