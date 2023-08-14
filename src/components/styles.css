@@ -212,6 +212,7 @@ span {
   color: #ffffff;
   width: 90%;
   margin-top: 3rem;
+  gap: 10px;
 }
 .card {
   width: 255px;
