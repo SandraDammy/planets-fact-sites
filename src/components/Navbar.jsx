@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import {ReactComponent as Hamburger} from '../assets/img/icon-hamburger.svg'
 
 const Navbar = () => {
   return (
@@ -8,10 +9,14 @@ const Navbar = () => {
         <a href="/">THE PLANETS</a>
       </div>
 
+      <div className="hamburger">
+        <Hamburger/>
+      </div>
+
       <div className="navigation-menu">
         <ul>
           <li>
-            <a href="/mercury">mercury</a>
+            <a href="/mercury" className="nav-active">mercury</a>
           </li>
           <li>
             <a href="/venus">venus</a>

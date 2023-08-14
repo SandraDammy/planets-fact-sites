@@ -1,9 +1,18 @@
 import React from 'react'
+import Img from '../components/Img'
+import Context from '../components/Context'
+import Card from '../components/Card'
 
 const Mercury = () => {
   return (
-    <div>
-        <h1>Mercury</h1>
+    <div className='container'>
+      <div className='container-body'>
+        <Img/>
+        <Context/>
+      </div>
+      <div className='container-card'>
+        <Card/>
+      </div>
     </div>
   )
 }
