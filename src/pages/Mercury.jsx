@@ -1,12 +1,8 @@
 import React from "react";
-// import Img from "../components/Img";
 import Context from "../components/Context";
 import Card from "../components/Card";
 import LinkSource from "../components/LinkSource";
 import PlantStage from "../components/PlantStage";
-// import MercuryOverview from "../assets/img/mercury_overview.png";
-// import MercuryInternal from "../assets/img/mercury_internal.png";
-// import MercurySurface from "../assets/img/mercury_surface.png";
 
 const Mercury = () => {
   return (
