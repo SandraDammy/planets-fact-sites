@@ -161,6 +161,12 @@ span {
   text-align: left;
   text-decoration: underline;
 }
+.icon {
+  width: 12px;
+  height: 12px;
+  top: 8px;
+  left: 152px;
+}
 /* plantStages */
 .plant-stage {
   display: flex;
@@ -225,18 +231,15 @@ span {
   line-height: 25px;
   letter-spacing: 1px;
   text-align: left;
-  
 }
 .card-value {
   font-family: Antonio;
-font-size: 40px;
-font-weight: 400;
-line-height: 52px;
-letter-spacing: -1.5px;
-text-align: left;
-
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+  text-align: left;
 }
-
 
 @media (max-width: 768px) {
   .navigation {
