@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-const Img = ({ overview, internal, surface }) => {
+const Img = ({ overview, internal, surface}) => {
   return (
     <div className="plant-img">
       <img src={overview} alt="" className="overview"/>

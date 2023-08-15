@@ -9,11 +9,25 @@ import internal from "../assets/img/planet-mercury-internal.svg";
 import overview from "../assets/img/planet-mercury.svg";
 
 const Mercury = () => {
+  // const [imageClicked, setImageClicked] = useState({
+  //   overview: false,
+  //   surface: false,
+  //   internal: false
+  // });
+  // const onClickHandler = (order) => {
+  //   setImageClicked((prevState) => ({
+  //     ...prevState,
+  //     [order]: !prevState[order]
+  //   }));
+  // };
   return (
     <div className="container">
       <div className="container-body">
         <div className="planet">
-          <Img overview={overview} internal={internal} surface={surface} />
+          <Img 
+          overview={overview} 
+          internal={internal} 
+          surface={surface} />
         </div>
         <div className="container-context">
           <Context
@@ -24,9 +38,15 @@ const Mercury = () => {
           />
           <LinkSource linkText={"Wikipedia"} />
           <div>
-            <PlantStage number={"01"} title={"OVERVIEW"} />
-            <PlantStage number={"02"} title={"Internal Structure"} />
-            <PlantStage number={"03"} title={"Surface Geology"} />
+            <PlantStage number={"01"} title={"OVERVIEW"}
+            //  onClick={() => onClickHandler("overview")}
+             />
+            <PlantStage number={"02"} title={"Internal Structure"} 
+            // onClick={() => onClickHandler("internal")}
+            />
+            <PlantStage number={"03"} title={"Surface Geology"} 
+            // onClick={() => onClickHandler("surface")}
+            />
           </div>
         </div>
       </div>
