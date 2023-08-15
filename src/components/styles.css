@@ -244,8 +244,6 @@ span {
 .card {
   width: 15.938rem;
   height: 8rem;
-  top: 52.5rem;
-  left: 165px;
   border: 0.031rem solid #ffffff;
   display: flex;
   flex-direction: column;
