@@ -81,20 +81,14 @@ a {
 .container {
   display: flex;
   height: calc(100vh - 5rem);
-  width: 100%;
   flex-direction: column;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  /* align-items: center; */
-  /* margin-left: 4rem;
-  margin-right: 4rem;
-  margin-bottom: 2rem; */
+  margin: 3rem 8rem;
 }
 .container-body {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   align-items: center;
-  width: 100%;
   color: #ffffff;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -105,8 +99,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: 4rem; */
-  width: calc(100% - 21.875rem);
+  width: calc(100% - 15rem);
   padding-bottom: 2rem;
 }
 .plant-img {
@@ -137,10 +130,10 @@ a {
 /* Context */
 .container-context {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   width: 21.875rem;
   text-align: left;
-  margin-right: 4rem;
 }
 .context-title {
   font-family: Antonio;
@@ -230,16 +223,12 @@ span {
 }
 /* card */
 .container-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
-  width: 100%;
   gap: 0.625rem;
   text-transform: uppercase;
-  /* padding-left: 2rem; */
-  /* margin-left: 4rem; */
-  /* margin-right: 4rem; */
 }
 .card {
   width: 15.938rem;
@@ -249,7 +238,6 @@ span {
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
-  margin: 1rem;
 }
 .card-title {
   font-family: Spartan;
