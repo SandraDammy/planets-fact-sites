@@ -1,9 +1,12 @@
 import React from "react";
+import "./styles.css";
 
-const Img = ({ classImg, planet }) => {
+const Img = ({ overview, internal, surface }) => {
   return (
-    <div>
-      <div className={classImg}>{planet}</div>
+    <div className="plant-img">
+      <img src={overview} alt="" className="overview"/>
+      <img src={internal} alt="" className="internal"/>
+      <img src={surface} alt="" className="surface"/>
     </div>
   );
 };

@@ -77,28 +77,6 @@ a {
   background-color: #26af6a;
 }
 
-/* Img */
-.planet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10rem;
-}
-.overview {
-  height: 290px;
-  width: 290px;
-  background-color: aqua;
-}
-.internal {
-  background-color: #108738;
-  width: 139px;
-  height: 278px;
-}
-.surface {
-  background-color: yellow;
-  width: 163px;
-  height: 199px;
-}
 /* Pages */
 .container {
   display: flex;
@@ -115,16 +93,47 @@ a {
   width: 90%;
   color: #ffffff;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
+
+/* Img */
+.planet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(90% - 350px);
+}
+.plant-img {
+  position: relative;
+}
+.overview {
+  width: 290px;
+  height: 290px;
+  top: 328px;
+  left: 335px;
+}
+.internal {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: 0px;
+  left: 0px;
+}
+.surface {
+  position: absolute;
+  width: 163px;
+  height: 199px;
+  top: 235px;
+  left: 60px;
+}
+/* Context */
 .container-context {
   display: flex;
   flex-direction: column;
   width: 350px;
   text-align: left;
+  margin-top: 5rem;
 }
-
-/* Context */
 .context-title {
   font-family: Antonio;
   font-size: 80px;
@@ -144,6 +153,9 @@ a {
 
 /* LinkSource */
 .text-link {
+  display: flex;
+  align-items: center;
+  justify-items: center;
   font-family: Spartan;
   font-size: 14px;
   font-weight: 700;
@@ -160,6 +172,8 @@ span {
   letter-spacing: 0px;
   text-align: left;
   text-decoration: underline;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 .icon {
   width: 12px;
@@ -241,6 +255,7 @@ span {
   letter-spacing: -1.5px;
   text-align: left;
 }
+
 
 @media (max-width: 768px) {
   .navigation {

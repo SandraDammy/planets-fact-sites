@@ -3,13 +3,17 @@ import Context from "../components/Context";
 import Card from "../components/Card";
 import LinkSource from "../components/LinkSource";
 import PlantStage from "../components/PlantStage";
+import Img from "../components/Img";
+import surface from "../assets/img/geology-mercury.png";
+import internal from "../assets/img/planet-mercury-internal.svg";
+import overview from "../assets/img/planet-mercury.svg";
 
 const Mercury = () => {
   return (
     <div className="container">
       <div className="container-body">
         <div className="planet">
-       
+          <Img overview={overview} internal={internal} surface={surface} />
         </div>
         <div className="container-context">
           <Context
