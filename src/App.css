@@ -12,6 +12,7 @@ body {
   background-color: #070724;
   background-image: url('./assets//img/background-stars.svg');
   text-transform: capitalize;
+  width: 100vw;
 }
 
 /* styling scrollbar */
