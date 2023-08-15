@@ -1,21 +1,21 @@
 .navigation {
-  height: 70px;
+  height: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
   position: relative;
   color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 0.063rem solid #ffffff;
   padding: 0.5rem;
   text-transform: uppercase;
 }
 .brand-name {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   font-family: "Antonio", sans-serif;
   margin-left: 1rem;
-  line-height: 36.23px;
-  letter-spacing: -1.05px;
+  line-height: 2.264rem;
+  letter-spacing: -0.066rem;
 }
 a {
   text-decoration: none;
@@ -26,9 +26,9 @@ a {
   color: #ffffff;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
-  font-size: 11px;
-  line-height: 24px;
-  letter-spacing: 1px;
+  font-size: 0.688rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.063rem;
   margin-right: 1rem;
 }
 .navigation-menu ul {
@@ -45,13 +45,13 @@ a {
   width: 100%;
 }
 .navigation-menu a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 0.125rem solid #ffffff;
 }
 /* .nav-active {
-  border-bottom: 2px solid #ffffff
+  border-bottom: 0.125rem solid #ffffff
 } */
 .navigation-menu a.active {
-  border-bottom: 2px solid #108738;
+  border-bottom: 0.125rem solid #108738;
 }
 
 /* Hamburger  */
@@ -65,13 +65,13 @@ a {
   transition: background-color 0.2s ease-in-out;
   position: absolute;
   top: 50%;
-  right: 25px;
+  right: 1.563rem;
   transform: translateY(-50%);
   display: none;
 }
 .hamburger img {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 .hamburger:hover {
   background-color: #26af6a;
@@ -80,7 +80,7 @@ a {
 /* Pages */
 .container {
   display: flex;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 5rem);
   flex-direction: column;
   align-items: center;
   margin-left: 4rem;
@@ -103,7 +103,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(90% - 350px);
+  width: calc(90% - 21.875rem);
   padding-bottom: 2rem;
 }
 .plant-img {
@@ -135,22 +135,22 @@ a {
 .container-context {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 21.875rem;
   text-align: left;
 }
 .context-title {
   font-family: Antonio;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 400;
-  line-height: 104px;
+  line-height: 6.5rem;
   letter-spacing: 0px;
   margin-bottom: 1.5rem;
 }
 .context-text {
   font-family: Spartan;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.563rem;
   letter-spacing: 0px;
   margin-bottom: 1rem;
 }
@@ -161,18 +161,19 @@ a {
   align-items: center;
   justify-items: center;
   font-family: Spartan;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 1.563rem;
   letter-spacing: 0px;
   text-align: left;
   margin-bottom: 1rem;
+  opacity: 50%;
 }
 span {
   font-family: Spartan;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.563rem;
   letter-spacing: 0px;
   text-align: left;
   text-decoration: underline;
@@ -180,10 +181,10 @@ span {
   padding-right: 0.3rem;
 }
 .icon {
-  width: 12px;
-  height: 12px;
-  top: 8px;
-  left: 152px;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0.5rem;
+  left: 9.5rem;
 }
 /* plantStages */
 .plant-stage {
@@ -191,11 +192,11 @@ span {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  width: 350px;
-  height: 48px;
-  top: 577px;
-  left: 925px;
-  border: 0.5px solid #ffffff;
+  width: 21.875rem;
+  height: 3rem;
+  top: 36.063rem;
+  left: 57.813rem;
+  border: 0.063rem solid #ffffff;
   padding-left: 1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -207,18 +208,19 @@ span {
 }
 .number {
   font-family: Spartan;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 1.563rem;
   letter-spacing: 2.5714285373687744px;
   text-align: left;
   margin-right: 1rem;
+  opacity: 50%;
 }
 .plant-stage .stage-text {
   font-family: Spartan;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 1.563rem;
   letter-spacing: 2.5714285373687744px;
   text-align: left;
 }
@@ -229,14 +231,14 @@ span {
   text-transform: uppercase;
   color: #ffffff;
   width: 90%;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .card {
-  width: 255px;
-  height: 128px;
-  top: 840px;
+  width: 15.938rem;
+  height: 8rem;
+  top: 52.5rem;
   left: 165px;
-  border: 0.5px solid #ffffff;
+  border: 0.031rem solid #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,25 +246,26 @@ span {
 }
 .card-title {
   font-family: Spartan;
-  font-size: 11px;
+  font-size: 0.688rem;
   font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 1.563rem;
+  letter-spacing: 0.063rem;
   text-align: left;
+  opacity: 50%;
 }
 .card-value {
   font-family: Antonio;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 52px;
-  letter-spacing: -1.5px;
+  line-height: 3.25rem;
+  letter-spacing: -0.094rem;
   text-align: left;
 }
 
 
 @media (max-width: 768px) {
   .navigation {
-    height: 100px;
+    height: 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +292,7 @@ span {
 }
 @media (max-width: 375px) {
   .navigation {
-    height: 60px;
+    height: 3.75rem;
     width: 80%;
     background-color: #89c922;
   }
@@ -299,9 +302,9 @@ span {
     top: 60px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 77px);
+    height: calc(100vh - 4.813rem);
     background-color: white;
-    border-top: 1px solid black;
+    border-top: 0.063rem solid black;
   }
   .hamburger {
     display: block;
