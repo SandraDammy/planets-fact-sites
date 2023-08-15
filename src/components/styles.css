@@ -85,6 +85,8 @@ a {
   align-items: center;
   margin-left: 4rem;
   margin-right: 4rem;
+  margin-bottom: 2rem;
+
 }
 .container-body {
   display: flex;
@@ -93,7 +95,7 @@ a {
   width: 90%;
   color: #ffffff;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 /* Img */
@@ -102,6 +104,7 @@ a {
   align-items: center;
   justify-content: center;
   width: calc(90% - 350px);
+  padding-bottom: 2rem;
 }
 .plant-img {
   position: relative;
@@ -118,6 +121,7 @@ a {
   height: 290px;
   top: 0px;
   left: 0px;
+  display: none;
 }
 .surface {
   position: absolute;
@@ -125,6 +129,7 @@ a {
   height: 199px;
   top: 235px;
   left: 60px;
+  display: none;
 }
 /* Context */
 .container-context {
@@ -132,7 +137,6 @@ a {
   flex-direction: column;
   width: 350px;
   text-align: left;
-  margin-top: 5rem;
 }
 .context-title {
   font-family: Antonio;
@@ -225,7 +229,6 @@ span {
   text-transform: uppercase;
   color: #ffffff;
   width: 90%;
-  margin-top: 3rem;
   gap: 10px;
 }
 .card {
