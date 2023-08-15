@@ -95,7 +95,7 @@ a {
   width: 90%;
   color: #ffffff;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 /* Img */
@@ -231,7 +231,7 @@ span {
   text-transform: uppercase;
   color: #ffffff;
   width: 90%;
-  gap: 0.625rem;
+  gap: 0.5rem;
 }
 .card {
   width: 15.938rem;

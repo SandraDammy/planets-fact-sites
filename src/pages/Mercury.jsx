@@ -31,10 +31,10 @@ const Mercury = () => {
         </div>
       </div>
       <div className="container-card">
-        <Card title={"ROTATION TIME"} value={"58.6"} />
-        <Card title={"ROTATION TIME"} value={"58.6"} />
-        <Card title={"ROTATION TIME"} value={"58.6"} />
-        <Card title={"ROTATION TIME"} value={"58.6"} />
+        <Card title={"ROTATION TIME"} value={"58.6 Days"} />
+        <Card title={"REVOLUTION TIME"} value={"87.97 Days"} />
+        <Card title={"radius"} value={"2,439.7 km"} />
+        <Card title={"AVERAGE TEMP."} value={"430°c"} />
       </div>
     </div>
   );
