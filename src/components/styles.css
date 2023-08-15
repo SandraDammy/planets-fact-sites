@@ -234,11 +234,12 @@ span {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   color: #ffffff;
-  width: 90%;
+  width: 100%;
   gap: 0.625rem;
   text-transform: uppercase;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  padding-left: 2rem;
+  /* margin-left: 4rem; */
+  /* margin-right: 4rem; */
 }
 .card {
   width: 15.938rem;
