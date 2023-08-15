@@ -237,9 +237,8 @@ span {
   width: 100%;
   gap: 0.625rem;
   text-transform: uppercase;
-  /* padding-left: 2rem; */
-  /* margin-left: 4rem; */
-  /* margin-right: 4rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .card {
   width: 15.938rem;
@@ -248,7 +247,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
   margin: 1rem;
 }
 .card-title {
