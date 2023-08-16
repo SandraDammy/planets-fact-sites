@@ -30,6 +30,7 @@ const Mercury = () => {
           surface={surface} />
         </div>
         <div className="container-context">
+          <div className="container-text">
           <Context
             title={"mercury"}
             subtitle={
@@ -37,7 +38,8 @@ const Mercury = () => {
             }
           />
           <LinkSource linkText={"Wikipedia"} />
-          <div>
+          </div>
+          <div className="context-btn">
             <PlantStage number={"01"} title={"OVERVIEW"}
             //  onClick={() => onClickHandler("overview")}
              />

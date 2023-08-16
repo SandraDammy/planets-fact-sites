@@ -213,7 +213,7 @@ span {
   margin-right: 1rem;
   opacity: 50%;
 }
-.plant-stage .stage-text {
+.stage-text {
   font-family: Spartan;
   font-size: 0.75rem;
   font-weight: 700;
@@ -256,18 +256,14 @@ span {
   letter-spacing: -0.094rem;
   text-align: left;
 }
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navigation {
     height: 6.25rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 0;
-    /* background-color: rgb(0, 255, 247); */
   }
   .brand-name {
     margin-left: 0;
@@ -283,7 +279,76 @@ span {
   .hamburger {
     display: none;
   }
+  .container {
+    display: flex;
+    height: calc(100vh - 6.25rem);
+    margin: 0rem 2rem 0rem 2rem;
+  }
+  .container-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 1rem;
+  }
+  .container-context {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+  }
+  .context-title {
+    font-size: 3rem;
+    line-height: 3.875rem;
+  }
+  .context-text {
+    font-size: 0.688rem;
+  }
+  .text-link {
+    font-size: 0.75rem;
+  }
+  span {
+    font-size: 0.75rem;
+  }
+  .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 21.188rem;
+    height: 15.813rem;
+  }
+  .context-btn {
+    display: flex;
+    flex-direction: column;
+    height: 9.5rem;
+  }
+  .plant-stage {
+    width: 17.563rem;
+    height: 2.5rem;
+  }
+  .stage-text,
+  .number {
+    font-size: 0.563rem;
+  }
+  .card {
+    width: 10.25rem;
+    height: 5.5rem;
+  }
+  .card-title{
+    font-size: 0.5rem;
+    line-height: 1.313rem;
+    letter-spacing: 0.046rem;
+  }
+  .card-value{
+    font-size: 1.5rem;
+    line-height: 1.941rem;
+    letter-spacing: -0.05rem;
+  }
 }
+
 @media (max-width: 375px) {
   .navigation {
     height: 3.75rem;
