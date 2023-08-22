@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Context from "../components/Context";
 import Card from "../components/Card";
 import LinkSource from "../components/LinkSource";
@@ -7,19 +7,15 @@ import Img from "../components/Img";
 import surface from "../assets/img/geology-mercury.png";
 import internal from "../assets/img/planet-mercury-internal.svg";
 import overview from "../assets/img/planet-mercury.svg";
+import "../components/styles.css";
 
 const Mercury = () => {
-  // const [imageClicked, setImageClicked] = useState({
-  //   overview: false,
-  //   surface: false,
-  //   internal: false
-  // });
-  // const onClickHandler = (order) => {
-  //   setImageClicked((prevState) => ({
-  //     ...prevState,
-  //     [order]: !prevState[order]
-  //   }));
-  // };
+  const [activeImage, setActiveImage] = useState("overview");
+
+  const handleImageChange = (imageType) => {
+    setActiveImage(imageType);
+  };
+
   return (
     <div className="container">
       <div className="container-body">
@@ -27,7 +23,9 @@ const Mercury = () => {
           <Img 
           overview={overview} 
           internal={internal} 
-          surface={surface} />
+          surface={surface} 
+          activeImage={activeImage}
+          />
         </div>
         <div className="container-context">
           <div className="container-text">
@@ -41,13 +39,13 @@ const Mercury = () => {
           </div>
           <div className="context-btn">
             <PlantStage number={"01"} title={"OVERVIEW"}
-            //  onClick={() => onClickHandler("overview")}
+              stageEventHandler={() => handleImageChange("overview")}
              />
             <PlantStage number={"02"} title={"Internal Structure"} 
-            // onClick={() => onClickHandler("internal")}
+             stageEventHandler={() => handleImageChange("internal")}
             />
             <PlantStage number={"03"} title={"Surface Geology"} 
-            // onClick={() => onClickHandler("surface")}
+             stageEventHandler={() => handleImageChange("surface")}
             />
           </div>
         </div>

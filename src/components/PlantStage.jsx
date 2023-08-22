@@ -1,4 +1,6 @@
 import React from 'react'
+import "./styles.css";
+
 
 const PlantStage = ({number, title, stageEventHandler}) => {
   return (

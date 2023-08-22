@@ -95,6 +95,18 @@ a {
 }
 
 /* Img */
+.active {
+  display: block;
+}
+.overview.active {
+  display: block;
+}
+.internal.active {
+  display: block;
+}
+.surface.active {
+  display: block;
+}
 .planet {
   display: flex;
   align-items: center;
