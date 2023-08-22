@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Context = ({title, subtitle, source}) => {
+const Context = ({ title, subtitle}) => {
   return (
     <div>
-      <h1 className='context-title'>{title}</h1>
-      <p className='context-text'>{subtitle}</p>
+      <h1 className="context-title">{title}</h1>
+      <p className="context-text">{subtitle}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Context
+export default Context;

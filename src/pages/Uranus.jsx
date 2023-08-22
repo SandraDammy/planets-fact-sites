@@ -31,7 +31,13 @@ const Uranus = () => {
             <Context
               title={"mercury"}
               subtitle={
-                ""
+                "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System."
+              }
+              subtitleInternal={
+                "The standard model of Uranus's structure is that it consists of three layers: a rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth masses."
+              }
+              subtitleSurface={
+                "The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere."
               }
             />
             <LinkSource linkText={"Wikipedia"} />
@@ -56,13 +62,13 @@ const Uranus = () => {
         </div>
       </div>
       <div className="container-card">
-        <Card title={"ROTATION TIME"} value={""} />
-        <Card title={"REVOLUTION TIME"} value={""} />
-        <Card title={"radius"} value={""} />
-        <Card title={"AVERAGE TEMP."} value={""} />
+        <Card title={"ROTATION TIME"} value={"17.2 hours"} />
+        <Card title={"REVOLUTION TIME"} value={"84 years"} />
+        <Card title={"radius"} value={"25,362 km"} />
+        <Card title={"AVERAGE TEMP."} value={"-195°c"} />
       </div>
     </div>
   );
 };
 
-export default Uranus
+export default Uranus;

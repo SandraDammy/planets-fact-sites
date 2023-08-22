@@ -163,7 +163,6 @@ a {
   letter-spacing: 0px;
   margin-bottom: 1rem;
 }
-
 /* LinkSource */
 .text-link {
   display: flex;
@@ -211,6 +210,11 @@ span {
   margin-bottom: 1rem;
 }
 .plant-stage:hover {
+  background-color: #419ebb;
+  color: #ffffff;
+  border: none;
+}
+.plant-stage-active {
   background-color: #419ebb;
   color: #ffffff;
   border: none;

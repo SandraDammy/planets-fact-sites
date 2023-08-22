@@ -12,40 +12,51 @@ import "../components/styles.css";
 const Mercury = () => {
   const [activeImage, setActiveImage] = useState("overview");
 
+
   const handleImageChange = (imageType) => {
     setActiveImage(imageType);
+  };
+
+  const subtitles = {
+    overview:"Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
+    internal:"Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
+    surface:"Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
   };
 
   return (
     <div className="container">
       <div className="container-body">
         <div className="planet">
-          <Img 
-          overview={overview} 
-          internal={internal} 
-          surface={surface} 
-          activeImage={activeImage}
+          <Img
+            overview={overview}
+            internal={internal}
+            surface={surface}
+            activeImage={activeImage}
           />
         </div>
         <div className="container-context">
           <div className="container-text">
-          <Context
-            title={"mercury"}
-            subtitle={
-              "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
-            }
-          />
-          <LinkSource linkText={"Wikipedia"} />
+            <Context
+              title={"mercury"}
+              subtitle={subtitles[activeImage]}
+                       />
+            <LinkSource linkText={"Wikipedia"} />
           </div>
           <div className="context-btn">
-            <PlantStage number={"01"} title={"OVERVIEW"}
+            <PlantStage
+              number={"01"}
+              title={"OVERVIEW"}
               stageEventHandler={() => handleImageChange("overview")}
-             />
-            <PlantStage number={"02"} title={"Internal Structure"} 
-             stageEventHandler={() => handleImageChange("internal")}
             />
-            <PlantStage number={"03"} title={"Surface Geology"} 
-             stageEventHandler={() => handleImageChange("surface")}
+            <PlantStage
+              number={"02"}
+              title={"Internal Structure"}
+              stageEventHandler={() => handleImageChange("internal")}
+            />
+            <PlantStage
+              number={"03"}
+              title={"Surface Geology"}
+              stageEventHandler={() => handleImageChange("surface")}
             />
           </div>
         </div>
