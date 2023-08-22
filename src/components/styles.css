@@ -208,14 +208,19 @@ span {
   padding-left: 1rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .plant-stage:hover {
   background-color: #419ebb;
   color: #ffffff;
   border: none;
 }
-.plant-stage-active {
+.plant-active{
   background-color: #419ebb;
+  border: none;
+}
+.plant-stage.active{
+  background-color: #94bb41;
   color: #ffffff;
   border: none;
 }

@@ -11,10 +11,12 @@ import "../components/styles.css";
 
 const Mercury = () => {
   const [activeImage, setActiveImage] = useState("overview");
+  const [activeStage, setActiveStage] = useState("overview");
 
 
   const handleImageChange = (imageType) => {
     setActiveImage(imageType);
+    setActiveStage(imageType);
   };
 
   const subtitles = {
@@ -46,16 +48,19 @@ const Mercury = () => {
             <PlantStage
               number={"01"}
               title={"OVERVIEW"}
+              isActive={activeStage === "overview"}
               stageEventHandler={() => handleImageChange("overview")}
             />
             <PlantStage
               number={"02"}
               title={"Internal Structure"}
+              isActive={activeStage === "internal"}
               stageEventHandler={() => handleImageChange("internal")}
             />
             <PlantStage
               number={"03"}
               title={"Surface Geology"}
+              isActive={activeStage === "surface"}
               stageEventHandler={() => handleImageChange("surface")}
             />
           </div>
