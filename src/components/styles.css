@@ -47,9 +47,6 @@ a {
 .navigation-menu a:hover {
   border-bottom: 0.125rem solid #ffffff;
 }
-/* .nav-active {
-  border-bottom: 0.125rem solid #ffffff
-} */
 .navigation-menu a.active {
   border-bottom: 0.125rem solid #108738;
 }
