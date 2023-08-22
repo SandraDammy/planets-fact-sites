@@ -11,9 +11,20 @@ import "../components/styles.css";
 
 const Neptune = () => {
   const [activeImage, setActiveImage] = useState("overview");
+  const [activeStage, setActiveStage] = useState("overview");
 
   const handleImageChange = (imageType) => {
     setActiveImage(imageType);
+    setActiveStage(imageType);
+  };
+
+  const subtitles = {
+    overview:
+      "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
+    internal:
+      "Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.",
+    surface:
+      "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
   };
   return (
     <div className="container">
@@ -28,34 +39,26 @@ const Neptune = () => {
         </div>
         <div className="container-context">
           <div className="container-text">
-            <Context
-              title={"mercury"}
-              subtitle={
-                "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
-              }
-              subtitleInternal={
-                "Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
-              }
-              subtitleSurface={
-                "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
-              }
-            />
+            <Context title={"Neptune"} subtitle={subtitles[activeImage]} />
             <LinkSource linkText={"Wikipedia"} />
           </div>
           <div className="context-btn">
             <PlantStage
               number={"01"}
               title={"OVERVIEW"}
+              isActive={activeStage === "overview"}
               stageEventHandler={() => handleImageChange("overview")}
             />
             <PlantStage
               number={"02"}
               title={"Internal Structure"}
+              isActive={activeStage === "internal"}
               stageEventHandler={() => handleImageChange("internal")}
             />
             <PlantStage
               number={"03"}
               title={"Surface Geology"}
+              isActive={activeStage === "surface"}
               stageEventHandler={() => handleImageChange("surface")}
             />
           </div>

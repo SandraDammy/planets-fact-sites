@@ -10,9 +10,20 @@ import overview from "../assets/img/planet-jupiter.svg";
 import "../components/styles.css";
 const Jupiter = () => {
   const [activeImage, setActiveImage] = useState("overview");
+  const [activeStage, setActiveStage] = useState("overview");
 
   const handleImageChange = (imageType) => {
     setActiveImage(imageType);
+    setActiveStage(imageType);
+  };
+
+  const subtitles = {
+    overview:
+      "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
+    internal:
+      "When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core.",
+    surface:
+      "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665.",
   };
   return (
     <div className="container">
@@ -27,34 +38,26 @@ const Jupiter = () => {
         </div>
         <div className="container-context">
           <div className="container-text">
-            <Context
-              title={"mercury"}
-              subtitleSurface={
-                "The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665."
-              }
-              subtitle={
-                "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun."
-              }
-              subtitleInternal={
-                "When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into its mantle. A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, which would have disrupted an originally solid Jovian core."
-              }
-            />
+            <Context title={"Jupiter"} subtitle={subtitles[activeImage]} />
             <LinkSource linkText={"Wikipedia"} />
           </div>
           <div className="context-btn">
             <PlantStage
               number={"01"}
               title={"OVERVIEW"}
+              isActive={activeStage === "overview"}
               stageEventHandler={() => handleImageChange("overview")}
             />
             <PlantStage
               number={"02"}
               title={"Internal Structure"}
+              isActive={activeStage === "internal"}
               stageEventHandler={() => handleImageChange("internal")}
             />
             <PlantStage
               number={"03"}
               title={"Surface Geology"}
+              isActive={activeStage === "surface"}
               stageEventHandler={() => handleImageChange("surface")}
             />
           </div>
