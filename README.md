@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Planets Fact Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive React application that presents key facts about each planet in our solar system. The app includes a responsive navigation bar, dedicated pages for each planet, tabbed content for overview/internal/surface geology, and summary statistics such as rotation time, radius, and temperature.
 
-## Available Scripts
+Live demo: https://planets-fact-sites.vercel.app/
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project is a space-themed information site inspired by the classic "Planets Fact Site" challenge. It provides a clean, educational UI where users can browse eight planets and switch between different views of each planet's information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app is built as a front-end React project with client-side routing and reusable UI components that keep the layout consistent across all planet pages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Planet navigation menu for all eight planets
+- Dedicated route for each planet page
+- Overview, internal structure, and surface geology tabs
+- Animated and styled UI for a modern space-themed design
+- Reusable data cards for key planetary statistics
+- Responsive layout for desktop and smaller screens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- React
+- JavaScript
+- React Router
+- CSS
+- Vite/CRA-style front-end app structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/App.js` – sets up the routing and page layout
+- `src/components/` – reusable components such as navbar, planet cards, and info tabs
+- `src/pages/` – page components for Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune
+- `src/assets/` – images and SVG assets used throughout the site
+- `src/App.css` and `src/components/styles.css` – styling for the application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Open the app in your browser:
 
-## Learn More
+   ```text
+   http://localhost:3000
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Production Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To generate a production build:
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This creates an optimized build directory for deployment.
 
-### Analyzing the Bundle Size
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project focuses on presenting astronomical information in a polished, user-friendly interface and is a good example of a React app using routing and reusable components to build a multi-page data site.
